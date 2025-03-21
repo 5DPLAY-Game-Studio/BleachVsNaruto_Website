@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    死神vs火影 竞技版
+  </title>
+  <script>
+    // Https Rewrite
+    var url = window.location.href;
+    if (url.indexOf("https") < 0 && url.indexOf("file") < 0) {
+      url = url.replace("http:", "https:");
+      window.location.replace(url);
+    }
+  </script>
+  <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+    }
+
+    body {
+      background-image: url('https://s3.bmp.ovh/imgs/2025/02/04/fb0c4f66769b8098.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .content {
+      position:
+        relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2em;
+    }
+
+    .content img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .background-cover {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      background-image:
+        url('https://s3.bmp.ovh/imgs/2025/02/04/90436918c32394b5.png');
+      background-size:
+        cover;
+      background-position: right 40% top;
+    }
+
+    .btn-container {
+      display:
+        block;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media all and (orientation: landscape) {
+      .btn-container {
+        margin-left: -60%;
+      }
+    }
+
+    @media all and (orientation: portrait) {
+      .btn-container {
+        margin-left: 5%;
+      }
+    }
+
+    .btn {
+      -webkit-transition:
+        all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      -moz-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      -o-transition: all 0.2s cubic-bezier(0.25,
+          0.46, 0.45, 0.94);
+      -ms-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45,
+          0.94);
+      transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      font-family:
+        "SimHei", sans-serif;
+      font-weight: 500;
+      border: 1px solid #121212;
+      line-height:
+        1.5;
+      font-size: 1em;
+      padding: 8px 16px;
+      max-width: 260px;
+      display: block;
+      cursor: pointer;
+      position: relative;
+      background-color: #fff;
+      overflow:
+        hidden;
+      outline: none;
+      text-decoration: none;
+      text-align: center;
+      vertical-align:
+        bottom;
+      width: 100%;
+    }
+
+    .btn:focus {
+      outline: none;
+    }
+
+    @media screen and (min-width: 30em) {
+      .btn {
+        max-width: 260px;
+      }
+
+      .btn.btn-small {
+        max-width:
+          220px;
+      }
+    }
+
+    @media screen and (min-width: 40em) {
+      .btn {
+        display: inline-block;
+      }
+    }
+
+    .btn-clear {
+      background-color: transparent;
+    }
+
+    .btn-clear:hover {
+      background-color:
+        #121212;
+      color: #fff;
+    }
+
+    .btn-clear.btn-light {
+      border-color: #fff;
+      color:
+        #fff;
+    }
+
+    .btn-clear.btn-light:hover {
+      color: #121212;
+      background-color:
+        #fff;
+    }
+
+    .btn-light:hover {
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .btn-dark {
+      background-color: #121212;
+      color: #fff;
+      border-color: #fff;
+    }
+
+    .btn-dark:hover {
+      color: #807f83;
+    }
+
+    .btn-glitch {
+      transform: translateZ(0);
+      overflow: visible;
+    }
+
+    .btn-glitch.btn-glitch-active {
+      -webkit-filter: url("#filter");
+      filter:
+        url("#filter");
+    }
+
+    .btn-glitch.btn-glitch-active::after,
+    .btn-glitch.btn-glitch-active::before {
+      content: "";
+      width: 1px;
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+    }
+
+    .btn-glitch.btn-glitch-active::after {
+      left: -2px;
+      background-color:
+        #ff536b;
+      animation: colorshift-red 2.6s infinite;
+      animation-timing-function:
+        step-end;
+    }
+
+    .btn-glitch.btn-glitch-active::before {
+      right: -2px;
+      background-color:
+        #3ffeff;
+      animation: colorshift-blue 2.6s infinite;
+      animation-timing-function:
+        step-end;
+    }
+
+    @keyframes colorshift-red {
+
+      0%,
+      7% {
+        background-color: #ff536b;
+      }
+
+      8%,
+      18% {
+        background-color: transparent;
+      }
+
+      19% {
+        background-color: #ff536b;
+        width: 2px;
+      }
+
+      23%,
+      100% {
+        background-color: transparent;
+      }
+    }
+
+    @keyframes colorshift-blue {
+
+      0%,
+      7% {
+        background-color: #3ffeff;
+      }
+
+      8%,
+      18% {
+        background-color:
+          transparent;
+      }
+
+      19% {
+        background-color: #3ffeff;
+        width: 2px;
+      }
+
+      23%,
+      100% {
+        background-color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background-cover">
+  </div>
+  <div class="content" style="position: relative;">
+    <img src="https://s3.bmp.ovh/imgs/2025/02/04/ca95b69232cfb2e1.png" />
+    <br />
+    <div class="btn-container">
+      <div class="btn btn-small btn-clear btn-light btn-glitch" onclick="window.location.href='https://pan.quark.cn/s/7f11bc4794c7';">
+        综合下载：Quark夸克网盘
+        <br />
+        （提取码：无）
+      </div>
+      <br />
+      <div class="btn btn-small btn-clear btn-light btn-glitch" onclick="window.location.href='https://share.weiyun.com/vu8mcCKv';">
+        普通下载：Weiyun腾讯微云
+        <br />
+        （提取码：lsp385）
+      </div>
+      <br />
+      <div class="btn btn-small btn-clear btn-light btn-glitch" onclick="window.location.href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg4ODE1MjgyNw==';">
+        其他下载：WeChat微信公众号
+      </div>
+      <br />
+      <div class="btn btn-small btn-clear btn-light btn-glitch" onclick="window.location.href='https://space.bilibili.com/1340107883';">
+        官方社媒：Bilibili哔哩哔哩
+      </div>
+      <br />
+      <div class="btn btn-small btn-clear btn-light btn-glitch" onclick="window.location.href='https://v.douyin.com/iBkGaNAc/';">
+        官方社媒：Douyin抖音
+      </div>
+      <br />
+    </div>
+  </div>
+  <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
+    <defs>
+      <filter id="filter">
+        <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp" seed="1">
+        </feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp">
+        </feDisplacementMap>
+      </filter>
+    </defs>
+  </svg>
+  <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js" type="application/javascript">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js">
+  </script>
+  <script>
+    // Glitch Timeline Function
+    var $text = document.querySelector(".btn-glitch-active"),
+      $filter = document.querySelector(".svg-sprite"),
+      $turb = $filter.querySelector("#filter feTurbulence"),
+      turbVal = {
+        val: 0.000001
+      },
+      turbValX = {
+        val: 0.000001
+      };
+
+    var glitchTimeline = function() {
+      var timeline = new TimelineMax({
+        repeat: -1,
+        repeatDelay: 2,
+        paused: true,
+        onUpdate: function() {
+          $turb.setAttribute("baseFrequency", turbVal.val + " " + turbValX.val);
+        }
+      });
+
+      timeline.to(turbValX, 0.1, {
+        val: 0.5
+      }).to(turbVal, 0.1, {
+        val: 0.02
+      });
+      timeline.set(turbValX, {
+        val: 0.000001
+      }).set(turbVal, {
+        val: 0.000001
+      });
+      timeline.to(turbValX, 0.2, {
+          val: 0.4
+        },
+        0.4).to(turbVal, 0.2, {
+          val: 0.002
+        },
+        0.4);
+      timeline.set(turbValX, {
+        val: 0.000001
+      }).set(turbVal, {
+        val: 0.000001
+      });
+
+      return {
+        start: function() {
+          timeline.play(0);
+        },
+        stop: function() {
+          timeline.pause();
+        }
+      };
+    };
+
+    btnGlitch = new glitchTimeline();
+
+    $(".btn-glitch").on("mouseenter",
+      function() {
+        $(this).addClass("btn-glitch-active");
+        btnGlitch.start();
+      }).on("mouseleave",
+      function() {
+        var $this = $(this);
+        if ($this.hasClass("btn-glitch-active")) {
+          $this.removeClass("btn-glitch-active");
+          btnGlitch.stop();
+        }
+      });
+  </script>
+</body>
+
+</html>
